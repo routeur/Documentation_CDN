@@ -98,16 +98,16 @@ En général le CDN fait office de relais pour atteindre une destination, lorsqu
 - Lorsque le CDN amont fait le travail de redirection lui-même, sans que le client qui accédait au contenu en soit même conscient.
 
 <center> <H1> References </H1> </center> 
-https://community.akamai.com/customers/s/question/0D54R000074TaJLSA0/should-origin-certificate-be-pinned-at-akamai-for-better-security?language=en_US
-https://www.internetsociety.org/wp-content/uploads/2021/01/forwarding-loop-attacks-content-delivery-networks.pdf
-https://www.securityweek.com/new-attack-abuses-cdns-spread-malware/
-https://youtu.be/txKdD9FlFBs
-https://www.cyberark.com/resources/threat-research-blog/implementing-malware-command-and-control-using-major-cdns-and-high-traffic-domains
-https://www.bamsoftware.com/papers/fronting/
-https://www.bortzmeyer.org/7336.html
-https://www.amitlevy.com/papers/stickler-w2sp15.pdf
-https://www.jianjunchen.com/p/cdn-origin-validation.SDRS18.pdf
-Internet Web Replication and Caching Taxonomy (https://www.rfc-editor.org/rfc/rfc3040)
-Content Distribution Network Interconnection (CDNI) Problem Statement(https://www.rfc-editor.org/rfc/rfc6707)
-https://www.akamai.com/fr/our-thinking/ddos
-https://www.belugacdn.com/content-delivery-network-security
+- https://community.akamai.com/customers/s/question/0D54R000074TaJLSA0/should-origin-certificate-be-pinned-at-akamai-for-better-security?language=en_US
+- https://www.internetsociety.org/wp-content/uploads/2021/01/forwarding-loop-attacks-content-delivery-networks.pdf
+- https://www.securityweek.com/new-attack-abuses-cdns-spread-malware/
+- https://youtu.be/txKdD9FlFBs
+- https://www.cyberark.com/resources/threat-research-blog/implementing-malware-command-and-control-using-major-cdns-and-high-traffic-domains
+- https://www.bamsoftware.com/papers/fronting/
+- https://www.bortzmeyer.org/7336.html
+- https://www.amitlevy.com/papers/stickler-w2sp15.pdf
+- https://www.jianjunchen.com/p/cdn-origin-validation.SDRS18.pdf
+- Internet Web Replication and Caching Taxonomy (https://www.rfc-editor.org/rfc/rfc3040)
+- Content Distribution Network Interconnection (CDNI) Problem Statement(https://www.rfc-editor.org/rfc/rfc6707)
+- https://www.akamai.com/fr/our-thinking/ddos
+- https://www.belugacdn.com/content-delivery-network-security
