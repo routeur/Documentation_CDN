@@ -25,6 +25,7 @@ En mode pull le serveur CDN va marcher comme un reverse proxy en redistribuant l
 ## MITM (man-in-the-middle)
 
 Un malware peut être injecté lors d'un réponse HTTP venant d'un CDN qui lui meme est compromis.
+
 ![Pasted image 20230506014046](https://github.com/routeur/Documentation_CDN/assets/49996859/ef44729e-cff8-4d3b-b871-c3b613adba56)
 
 Dans notre cas le nœud A correspond à un CDN amont qui redistribue le contenu mais qui le possède pas contrairement à l'infrastructure compromise qui est elle un CDN aval et qui possède le contenu.
@@ -57,6 +58,7 @@ Elle consiste à submerger de requêtes le front end d'un site qui à taux d'acc
 ### Geo-IP
 **IP Abondance abuse :**
 Il est possible d'avoir accès à du contenu en indiquant une source complètement différente.
+
 ![Pasted image 20230507004410](https://github.com/routeur/Documentation_CDN/assets/49996859/3016bb68-cc11-40cd-8390-bcdb2c41131f)
 
 Schéma assez généraliste sur une requête faite d'un utilisateur pour accéder à une ressource.
