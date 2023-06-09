@@ -3,10 +3,10 @@ Cet article à pour but de parler des utilisations malveillantes des infrastruct
 
 <center> <H1> CDN </H1> </center>
 
-Un Content distribution network où dit CDN est un groupe de serveurs qui se partagent des données en cache et permet le transfert rapide des ressources nécessaires au chargement d'un contenu sur Internet, *Par exemple: des pages HTML, des fichiers, des images et des vidéos.* 
-- Il permet d'améliorer grandement la qualité d'experience de l'utilisateur final, c'est pour cette raison que souvent il est utilisé dans des déploiements à grande échelle pour permettre de délivrer un contenu rapidement sans tenir compte de la localisation de l'utilisateur final.
-- Il permet de réduire le coût de la bande passante pour les hébergeurs de contenu web.
-- Un CDN peut aider à prémunir une ressource réseau d'une surcharge face aux attaques DDOS ce qui peut provoquer une interruption de service. Dans ce cas la un CDN va répartir la charge des requêtes reçues entre les différents serveurs appartenant a cette meme infrastructure.
+Un Content distribution network où dit CDN est un groupe de serveurs qui se partagent des données en cache et permet le transfert rapide des ressources nécessaires au chargement d'un contenu sur Internet, *Par exemple: des pages HTML, des fichiers, des images et des vidéos.*  
+- Il permet d'améliorer grandement la qualité d'experience de l'utilisateur final, c'est pour cette raison que souvent il est utilisé dans des déploiements à grande échelle pour permettre de délivrer un contenu rapidement sans tenir compte de la localisation de l'utilisateur final.  
+- Il permet de réduire le coût de la bande passante pour les hébergeurs de contenu web.  
+- Un CDN peut aider à prémunir une ressource réseau d'une surcharge face aux attaques DDOS ce qui peut provoquer une interruption de service. Dans ce cas la un CDN va répartir la charge des requêtes reçues entre les différents serveurs appartenant a cette meme infrastructure.  
 
 Un serveur qui fait office de CDN à deux modes distincts : push et pull
 En mode push la personne qui à lié son site web au CDN va upload ses ressources en avance.
@@ -97,17 +97,18 @@ En général le CDN fait office de relais pour atteindre une destination, lorsqu
 **Redirection Récursive :**
 - Lorsque le CDN amont fait le travail de redirection lui-même, sans que le client qui accédait au contenu en soit même conscient.
 
-<center> <H1> References </H1> </center> 
-- https://community.akamai.com/customers/s/question/0D54R000074TaJLSA0/should-origin-certificate-be-pinned-at-akamai-for-better-security?language=en_US
-- https://www.internetsociety.org/wp-content/uploads/2021/01/forwarding-loop-attacks-content-delivery-networks.pdf
-- https://www.securityweek.com/new-attack-abuses-cdns-spread-malware/
-- https://youtu.be/txKdD9FlFBs
-- https://www.cyberark.com/resources/threat-research-blog/implementing-malware-command-and-control-using-major-cdns-and-high-traffic-domains
-- https://www.bamsoftware.com/papers/fronting/
-- https://www.bortzmeyer.org/7336.html
-- https://www.amitlevy.com/papers/stickler-w2sp15.pdf
-- https://www.jianjunchen.com/p/cdn-origin-validation.SDRS18.pdf
-- Internet Web Replication and Caching Taxonomy (https://www.rfc-editor.org/rfc/rfc3040)
-- Content Distribution Network Interconnection (CDNI) Problem Statement(https://www.rfc-editor.org/rfc/rfc6707)
-- https://www.akamai.com/fr/our-thinking/ddos
-- https://www.belugacdn.com/content-delivery-network-security
+<center> <H1> References </H1> </center>  
+
+* https://community.akamai.com/customers/s/question/0D54R000074TaJLSA0/should-origin-certificate-be-pinned-at-akamai-for-better-security?language=en_US  
+* https://www.internetsociety.org/wp-content/uploads/2021/01/forwarding-loop-attacks-content-delivery-networks.pdf  
+* https://www.securityweek.com/new-attack-abuses-cdns-spread-malware/  
+* https://youtu.be/txKdD9FlFBs  
+* https://www.cyberark.com/resources/threat-research-blog/implementing-malware-command-and-control-using-major-cdns-and-high-traffic-domains  
+* https://www.bamsoftware.com/papers/fronting/  
+* https://www.bortzmeyer.org/7336.html  
+* https://www.amitlevy.com/papers/stickler-w2sp15.pdf  
+* https://www.jianjunchen.com/p/cdn-origin-validation.SDRS18.pdf  
+* Internet Web Replication and Caching Taxonomy (https://www.rfc-editor.org/rfc/rfc3040)  
+* Content Distribution Network Interconnection (CDNI) Problem Statement(https://www.rfc-editor.org/rfc/rfc6707)  
+* https://www.akamai.com/fr/our-thinking/ddos  
+* https://www.belugacdn.com/content-delivery-network-security  
