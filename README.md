@@ -75,6 +75,14 @@ En général le CDN fait office de relais pour atteindre une destination, lorsqu
 - Dam-flooding : l'attaquant (client) va vouloir envoyer une requête HTTP sur son site , la requête seras "Forward" dans les nœuds transitaires pour retourner au point de départ et interroger le serveur de destination qui lui va transmettre une réponse Stream qui va provoquer un effet de boucle amplifié sur tous les nœuds transitaires du CDN avant de répondre a l'attaquant (client). Pour augmenter le facteur d'amplification il est possible d'intégrer à la requête envoyé au serveur de destination une gzip bomb avec le header "Accept-Encoding:identity" afin que le nœud 0 du CDN le décompresse .
 
 <center> <H1> Contres-mesures </H1> </center> 
+### Coté CDN
+(a venir)
+
+### Coté client
+
+- Verifier le certificat TLS utilisé par le CDN.
+- Valider le serveur origine du CDN qui est utilisé et faire de "l'origin SSL/TLS validation".
+- Utiliser un JavaScript bootloader pour vérifier la provenance des ressources, empreinte numérique , certificats SSL/TLS , empreinte de hachage. Si le JavaScript bootloader peut bloquer le chargement de la ressource et afficher un avertissement à l'utilisateur.
 
 <center> <H1> Terminologies </H1> </center> 
 
