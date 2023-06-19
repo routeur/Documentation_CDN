@@ -1,5 +1,5 @@
 # Synthèse
-Cet article à pour but de parler des utilisations malveillantes des infrastructures CDN.
+Cette documentation à pour but de parler des utilisations malveillantes des infrastructures CDN.
 
 <center> <H1> CDN </H1> </center>
 
@@ -26,9 +26,9 @@ En mode pull le serveur CDN va marcher comme un reverse proxy en redistribuant l
 
 Un malware peut être injecté lors d'un réponse HTTP venant d'un CDN qui lui meme est compromis.
 
-![Pasted image 20230506014046](https://github.com/routeur/Documentation_CDN/assets/49996859/ef44729e-cff8-4d3b-b871-c3b613adba56)
+![image](https://github.com/routeur/Documentation_CDN/assets/49996859/d52942c4-70d8-41ac-887d-7caa144ceb1c)
 
-Dans notre cas le nœud A correspond à un CDN amont qui redistribue le contenu mais qui le possède pas contrairement à l'infrastructure compromise qui est elle un CDN aval et qui possède le contenu.
+Dans notre cas le nœud en amont correspond à un serveur qui redistribue le contenu mais qui le possède pas contrairement àu serveur compromis qui est elle un CDN aval et qui possède le contenu.
 
 **Possibilités pour un CDN compromis :**
 - Injecter du code coté client dans des réponses proxy-fiées pour récupérer des mots de passes ou traquer des machines clientes.
@@ -59,7 +59,7 @@ Elle consiste à submerger de requêtes le front end d'un site qui à taux d'acc
 **IP Abondance abuse :**
 Il est possible d'avoir accès à du contenu en indiquant une source complètement différente.
 
-![Pasted image 20230507004410](https://github.com/routeur/Documentation_CDN/assets/49996859/3016bb68-cc11-40cd-8390-bcdb2c41131f)
+![image](https://github.com/routeur/Documentation_CDN/assets/49996859/79b532cf-bb57-488a-bb95-625d86f2bedb)
 
 Schéma assez généraliste sur une requête faite d'un utilisateur pour accéder à une ressource.
 Il est possible de bypass les restrictions par IP en multipliant les requêtes en passant par un CDN. 
@@ -74,7 +74,7 @@ En général le CDN fait office de relais pour atteindre une destination, lorsqu
 - Inter-CDN loop : Fait un nœud sur plusieurs CDN différents
 - Dam-flooding : l'attaquant (client) va vouloir envoyer une requête HTTP sur son site , la requête seras "Forward" dans les nœuds transitaires pour retourner au point de départ et interroger le serveur de destination qui lui va transmettre une réponse Stream qui va provoquer un effet de boucle amplifié sur tous les nœuds transitaires du CDN avant de répondre a l'attaquant (client). Pour augmenter le facteur d'amplification il est possible d'intégrer à la requête envoyé au serveur de destination une gzip bomb avec le header "Accept-Encoding:identity" afin que le nœud 0 du CDN le décompresse .
 
-<center> <H1> Conclusion </H1> </center> 
+<center> <H1> Contres-mesures </H1> </center> 
 
 <center> <H1> Terminologies </H1> </center> 
 
